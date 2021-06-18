@@ -14,7 +14,7 @@ Route::get('/','IndexController@index')->name('index.index');
 
 Route::post('detail', 'ProductController@show')->name('product.show');
 
-Route::post('/checkout/{title},{price},{unit},{img}','CheckoutController@index')->name('checkout');
+Route::post('/checkout/{title},{price},{unit},{img}','CheckOutController@index')->name('checkout');
 Route::get('/backurl/success','BackUrlController@success')->name('backurl.success');
 
 Route::get('/backurl/failure','BackUrlController@failure')->name('backurl.failure');
