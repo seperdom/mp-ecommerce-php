@@ -26,7 +26,7 @@ class NotificationController extends Controller
 
         case "payment":
             $payment = Payment::find_by_id($_GET["id"]);
-            https://api.mercadopago.com/v1/payments/[ID]
+
             $response=json_encode($payment, true);
             var_dump($response);
 
@@ -62,9 +62,9 @@ class NotificationController extends Controller
 
         case "payment":
             $payment = Payment::find_by_id($_POST["id"]);
-            //$response=json_encode($payment, true);
-            //var_dump($response);
-            console_log($response);
+            $response=json_encode($payment, true);
+            var_dump($response);
+
             break;
         case "merchant_order":
             $plan = MerchantOrder::find_by_id($_POST["id"]);
