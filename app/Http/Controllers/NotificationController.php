@@ -1,5 +1,5 @@
 <?php
-
+http_response_code(200);
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -15,7 +15,7 @@ use MercadoPago\SDK;
 class NotificationController extends Controller
 {
 
-	http_response_code(200);
+
 	public function notification(Request $request){
 
 
