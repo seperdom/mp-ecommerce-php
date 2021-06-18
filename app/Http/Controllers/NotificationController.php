@@ -26,13 +26,13 @@ class NotificationController extends Controller
         case "payment":
             $payment = Payment::find_by_id($_POST["id"]);
             $response=json_decode($payment, true);
-            var_dump($response);
-            print_r($response);
+            //var_dump($response);
+            console_log($response);
             break;
         case "topic":
             $plan = MerchantOrder::find_by_id($_POST["id"]);
             $response=json_decode($plan, true);
-            var_dump($response);
+            console_log($response);
             break;
         case "subscription":
             $plan = Subscription::find_by_id($_POST["id"]);
