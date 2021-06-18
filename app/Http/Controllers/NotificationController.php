@@ -25,8 +25,8 @@ class NotificationController extends Controller
 
         case "payment":
             $payment = Payment::find_by_id($_GET["id"]);
-            $response=json_decode($payment, true);
-            var_dump($response);
+           // $response=json_decode($payment, true);
+            var_dump($payment);
             break;
         case "plan":
             $plan = Plan::find_by_id($_POST["id"]);
