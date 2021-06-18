@@ -22,6 +22,6 @@
     RewriteCond %{HTTPS} !=on
     RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
-    RewriteCond %{HTTP_HOST} ^http://seperdom-mp-ecommerce-php.herokuapp.com/$ [NC]
+    RewriteCond %{HTTP_HOST} ^www.seperdom-mp-ecommerce-php.herokuapp.com/$ [NC]
     RewriteRule ^(.*)$ https://seperdom-mp-ecommerce-php.herokuapp.com/ [R=301,L]
 </IfModule>
