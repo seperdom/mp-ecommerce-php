@@ -51,7 +51,7 @@ class BackUrlController extends Controller
 
    	}
 
-		}
+
 
 	}
 
