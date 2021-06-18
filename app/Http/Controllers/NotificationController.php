@@ -28,13 +28,13 @@ class NotificationController extends Controller
             $payment = Payment::find_by_id($_GET["id"]);
 
             $response=json_encode($payment, true);
-            var_dump($response);
+            var_dump($payment);
 
             break;
         case "merchant_order":
             $plan = MerchantOrder::find_by_id($_GET["id"]);
             $response=json_encode($plan, true);
-            var_dump($response);
+            var_dump($plan);
             break;
         case "subscription":
             $plan = Subscription::find_by_id($_POST["id"]);
