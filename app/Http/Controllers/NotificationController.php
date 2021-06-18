@@ -15,21 +15,22 @@ use MercadoPago\SDK;
 class NotificationController extends Controller
 {
 
+	http_response_code(200);
+	public function notification(Request $request){
 
-	public function notification(){
 
-   	 http_response_code(200);
    	 SDK::setAccessToken("APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398");
 
-    switch($_GET["type"]) {
+    switch($_POST["type"]) {
 
         case "payment":
-            $payment = Payment::find_by_id($_GET["id"]);
-           // $response=json_decode($payment, true);
-            var_dump($payment);
+            $payment = Payment::find_by_id($_POST["id"]);
+            $response=json_decode($payment, true);
+            var_dump($response);
+            print_r($response);
             break;
-        case "plan":
-            $plan = Plan::find_by_id($_POST["id"]);
+        case "topic":
+            $plan = MerchantOrder::find_by_id($_POST["id"]);
             $response=json_decode($plan, true);
             var_dump($response);
             break;
