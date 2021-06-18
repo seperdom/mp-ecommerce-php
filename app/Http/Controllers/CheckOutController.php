@@ -97,7 +97,7 @@ class CheckOutController extends Controller
         );
 
           # Save and posting preference
-        $preference->notification_url= "https://seperdom-mp-ecommerce-php.herokuapp.com/postNotification";
+        $preference->notification_url= "https://seperdom-mp-ecommerce-php.herokuapp.com/notification";
         //$preference->notification_url= "http://localhost:8000/notification";
         $preference->external_reference="seperdom@gmail.com";
         $preference->save();
