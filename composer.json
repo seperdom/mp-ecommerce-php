@@ -1,10 +1,9 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     "name": "laravel/laravel",
-=======
+
     "name": "mp-ecommerce-php",
->>>>>>> 3ae15fb500d78927352b8114ffd33887e02468e9
+
     "type": "project",
     "description": "The Laravel Framework.",
     "keywords": [
@@ -66,17 +65,5 @@
             "@php artisan key:generate --ansi"
         ]
     }
-<<<<<<< HEAD
-=======
-    "name": "mp-ecommerce-php",
-    "type": "project",
-    "require": {}
->>>>>>> e3aedbfa369010f518359439ddcfb5c7c45a088c
-=======
 
-    "name": "mp-ecommerce-php",
-    "type": "project",
-    "require": {}
-
->>>>>>> 3ae15fb500d78927352b8114ffd33887e02468e9
 }
