@@ -15,11 +15,11 @@ Route::get('/','IndexController@index')->name('index.index');
 Route::post('detail', 'ProductController@show')->name('product.show');
 
 Route::post('/checkout/{title},{price},{unit},{img}','CheckOutController@index')->name('checkout');
-Route::post('/backurl/success','BackUrlController@success')->name('backurl.success');
+Route::get('/backurl/success','BackUrlController@success')->name('backurl.success');
 
-Route::post('/backurl/failure','BackUrlController@failure')->name('backurl.failure');
+Route::get('/backurl/failure','BackUrlController@failure')->name('backurl.failure');
 
-Route::post('/backurl/pending','BackUrlController@pending')->name('backurl.pending');
+Route::get('/backurl/pending','BackUrlController@pending')->name('backurl.pending');
 
 Route::post('notification','NotificationController@notification')->name('notification');
 
