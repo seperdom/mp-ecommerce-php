@@ -24,22 +24,22 @@ class NotificationController extends Controller
     switch($_POST["type"]) {
 
         case "payment":
-            $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
+            $payment = Payment::find_by_id($_POST["id"]);
             $response=json_decode($payment, true);
             var_dump($response);
             break;
         case "plan":
-            $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
+            $plan = Plan::find_by_id($_POST["id"]);
             $response=json_decode($plan, true);
             var_dump($response);
             break;
         case "subscription":
-            $plan = MercadoPago\Subscription.find_by_id($_POST["id"]);
+            $plan = Subscription::find_by_id($_POST["id"]);
             $response=json_decode($plan, true);
             var_dump($response);
             break;
         case "invoice":
-            $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
+            $plan = Invoice::find_by_id($_POST["id"]);
             $response=json_decode($plan, true);
             var_dump($response);
             break;
