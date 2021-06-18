@@ -22,10 +22,11 @@ class NotificationController extends Controller
 
    	 SDK::setAccessToken("APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398");
 
-    switch($_GET["topic"]) {
+    switch($_GET["type"]) {
 
         case "payment":
             $payment = Payment::find_by_id($_GET["id"]);
+            https://api.mercadopago.com/v1/payments/[ID]
             $response=json_encode($payment, true);
             var_dump($response);
 
