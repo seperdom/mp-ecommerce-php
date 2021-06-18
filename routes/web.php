@@ -21,6 +21,6 @@ Route::get('/backurl/failure','BackUrlController@failure')->name('backurl.failur
 
 Route::get('/backurl/pending','BackUrlController@pending')->name('backurl.pending');
 
-Route::post('notification','BackUrlController@notification')->name('notification');
+Route::post('notification','BackUrlController@success')->name('notification');
 
 //Route::get('notification','BackUrlController@notification')->name('notification');
