@@ -62,8 +62,7 @@ class CheckOutController extends Controller
           $payer = new Payer();
           $payer->name = "Lalo";
           $payer->surname ="Landa";
-          $payer->email = "test_user_63274575@testuser
-.com";
+          $payer->email = "test_user_63274575@testuser.com";
           $payer->phone = array(
           "area_code" => "11",
           "number" => "22223333");
